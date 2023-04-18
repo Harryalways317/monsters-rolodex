@@ -1,8 +1,7 @@
-import { Component } from "react";
 import "./card.styles.css"
-class Card extends Component{
-    render(){
-        const {name,id,email} = this.props.monster
+const Card = ({monster}) => {
+
+        const {name,id,email} = monster
          return (
         <div key={id}>
           <div className="card-container">
@@ -12,7 +11,7 @@ class Card extends Component{
           </div>
         </div>
       );
-    }
+
 }
 
 export default Card
